@@ -1,0 +1,64 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import picture from "../images/man.webp"
+---
+<body>
+    
+
+<Header />
+<div class="article-container">
+    <div class="article-image">
+      <img src={picture} alt="Your Image">
+    </div>
+    <div class="article-text">
+      <h2>About Me</h2>
+      <p>Hi there! My name is John, and I'm a trucker based in Seattle. I've been driving for several years now and have a passion for the open road. I've also got a family to support, so I'm always on the lookout for opportunities to put my skills to work and provide for my wife and four kids.<br><br>
+
+
+        As a trucker, I'm dedicated to providing top-notch service to my clients. I've got all the necessary certifications and licenses, and I'm proud to say that I have a spotless driving record. I'm also committed to safety and efficiency, and I always strive to deliver loads on time and in great condition.<br><br>
+        
+        If you're looking for a reliable and competitively priced trucker for your next shipment, look no further! I'm available for contract work and would be honored to put my skills to work for you. Whether you need local or long-distance deliveries, I've got the experience and expertise to get the job done right. Don't hesitate to get in touch with me to learn more about my services and rates.</p>
+    </div>
+  </div>
+
+<Footer />
+
+</body>
+<style>
+
+html,
+  body {
+    height: 100vh;
+    min-height: 100%;
+    margin: 0;
+  }
+
+
+.article-container {
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+  }
+
+  .article-image {
+    max-width: 20rem;
+    align-self: center;
+  }
+  .article-image img{
+    max-width: 100%;
+  }
+
+  .article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media (max-width: 600px) {
+    .article-container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

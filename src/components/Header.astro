@@ -1,0 +1,55 @@
+---
+import logo from '../images/logo.jpg'
+---
+
+
+<header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="/">
+          <img src={logo} alt="" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <style>
+    .header {
+    height: 8rem;
+    background-color: #218ba8;
+    background-image: linear-gradient(to top, white, rgba(17, 85, 51, 0));
+  }
+ img{
+    border-radius: 5%;
+  }
+  .header .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .header img {
+    height: 5rem;
+    vertical-align: middle;
+  }
+  .header nav ul {
+    display: flex;
+  }
+  .header nav ul li {
+
+    list-style-type: none;
+    padding: 0 10px;
+  }
+  .header nav ul li a {
+    text-decoration: none;
+    color: #0870b0
+  }
+  </style>
