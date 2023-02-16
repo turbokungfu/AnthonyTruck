@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import ContactForm from '~components/ContactForm.svelte';
+
 ---
 
 <Layout title="Anthony Siu Trucking">
@@ -29,6 +31,7 @@ import Card from '../components/Card.astro';
 				body="Make sure I'm the right person to work for you."
 			/>
 		</ul>
+		<ContactForm client:load />  
 	</main>
 </Layout>
 
@@ -40,7 +43,7 @@ import Card from '../components/Card.astro';
 		margin: auto;
 		padding: 1.5rem;
 		max-width: 60ch;
-		min-height: 70%;
+		min-height: auto;
 	}
 	h1 {
 		text-align: center;
@@ -75,11 +78,16 @@ import Card from '../components/Card.astro';
 		color: rgb(var(--accent));
 	}
 	.link-card-grid {
-
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 1rem;
 		padding: 0;
 	}
+
+
+
+
+
+
 
 </style>
