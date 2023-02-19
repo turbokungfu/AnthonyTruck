@@ -1,5 +1,4 @@
 import axios from 'axios';
-
 const { TELEGRAM_BOT_API_TOKEN, TELEGRAM_BOT_CHAT_ID } = process.env;
 async function notifyViaTelegramBot({ honeyBotFlaggedSpam, name, email, message }) {
   try {
@@ -66,5 +65,3 @@ export async function handler({ body, httpMethod }) {
   }
 }
 export default handler;
-
-  

@@ -181,7 +181,7 @@ input, textarea {
 }
 
 textarea {
-  min-height: 150px;
+  min-height: auto;
 }
 
 button[type="submit"] {

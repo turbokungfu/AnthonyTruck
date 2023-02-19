@@ -10,5 +10,8 @@
     }
 
   },
-  "extends": "astro/tsconfigs/base"
+  "extends": "astro/tsconfigs/base",
+
+  "exclude": ["node_modules", "dist", "build"]
 }
+
